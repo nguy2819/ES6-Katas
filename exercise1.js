@@ -1,7 +1,6 @@
 // 1: template strings - basics
 // To do: make all tests pass, leave the asserts unchanged!
 
-// Nayshlok changes
 
 describe('a template string, is wrapped in ` (backticks) instead of \' or "', function() {
 
