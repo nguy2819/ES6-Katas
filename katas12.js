@@ -34,10 +34,13 @@ describe('destructuring objects', () => {
       });
     
       it('destructure from builtins (string)', () => {
-        const {substr} = String.prototype.substr(1);
-        // changed 1 to String.prototype.substr(1)
+        const {substr} = String.prototype;
+        //pull the substr from prototype 
+        // same as
+        // const substr = String.prototype.substr
         assert.equal(substr, String.prototype.substr);
       });
+    
     });
   
   });
