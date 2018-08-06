@@ -51,7 +51,7 @@ describe('`Map.prototype.get` returns the element from the map for a key', funct
       const value = map.get(-1);
       //added -1 inside map.get() so to get an unknow key => it can get to void 0
       //in the past: const value = map.get();
-      //OR you can change: map.set(void 0, void 0)
+      //OR you can change: map.set(void 0, void 0) with map.get()
       assert.equal(value, void 0);
     });
     
