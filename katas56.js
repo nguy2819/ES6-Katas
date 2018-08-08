@@ -27,7 +27,7 @@ describe('pass a function to a generator', () => {
   
     it('nesting yielded function calls', function() {
       function* generatorFunction() {
-        yield (yield (yield 1)());
+        yield (yield (yield 1)()); // or yield ((yield 1, yield 2, yield 3)())
       }
       var iteratedOver = [1, 2, 3];
       //in the past: var iteratedOver = []; because [1, 2, 3] is not equal []
